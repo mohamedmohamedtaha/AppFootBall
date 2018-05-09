@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.manasatpc.footballapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/bar"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="30dp"
+        />
+    <TextView
+        android:id="@+id/TVGoalsTeams1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NumbersGoals"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/TVGoalsTeam1Code"
+        android:text="0"
+        android:layout_below="@id/TVGoalsTeams1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/PrimaryText"
+
+        />
+            <TextView
+                android:id="@+id/TVTeamName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team Name"
+                android:layout_marginLeft="16dp"
+                android:layout_below="@id/imageBar"
+                android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/TVTeamName1"
+        android:text="Barcelona"
+        android:layout_below="@id/TVTeamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/PrimaryText"
+
+        />
+    <TextView
+        android:id="@+id/TVTeamNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Number"
+        android:layout_below="@id/imageBar"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/TVTeamNumber1"
+        android:text="11"
+        android:layout_below="@id/TVTeamNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/PrimaryText"
+
+        />
+    <ImageView
+        android:id="@+id/imageRed"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/red"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        />
+    <TextView
+        android:id="@+id/TVNumberRedCardTeam1"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/imageRed"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/PrimaryText"
+
+        />
+    <ImageView
+        android:id="@+id/imageYellow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/yellow"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/imageRed"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        />
+    <TextView
+        android:id="@+id/TVNumberYellowCardTeam1"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/imageYellow"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/PrimaryText"
+
+        />
+    <LinearLayout
+        android:id="@+id/linearBar"
+        android:orientation="horizontal"
+        android:layout_below="@id/TVTeamNumber1"
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/AddGoalTeam1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="add Goal"
+            android:background="@color/backButton"
+
+
+            />
+        <Button
+            android:id="@+id/AddOffsetTeam1"
+            android:text="Offset Gool"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@color/backButton"
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearBar2"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <Button
+            android:id="@+id/AddRedCardTeam1"
+            android:text="Red Card"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_below="@id/TVTeamNumber1"
+            android:background="@color/redColorCard"
+
+            />
+
+        <Button
+            android:id="@+id/AddYellowCardTeam1"
+            android:text="Yellow Card"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@color/yellowColorCard"
+
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/linearBar2"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:id="@+id/linearReset"
+        android:layout_below="@+id/linearBar2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:text="reset"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorAccent"/>
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/imageRyalMadred"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ryadmadred"
+        android:layout_below="@id/linearReset"
+        android:layout_marginLeft="30dp"
+        />
+    <TextView
+        android:id="@+id/TVGoalsTeams2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NumbersGoals"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/linearReset"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/TVGoalsTeam2Code"
+        android:text="0"
+        android:layout_below="@id/TVGoalsTeams2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/PrimaryText"
+
+        />
+    <TextView
+        android:id="@+id/TVTeam2Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Name"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@id/imageRyalMadred"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/TVTeam2Name1"
+        android:text="Real Madrid"
+        android:layout_below="@id/TVTeam2Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/PrimaryText"
+
+        />
+    <TextView
+        android:id="@+id/TVTeam2Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Number"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/imageRyalMadred"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/TVTeam2Number1"
+        android:text="11"
+        android:layout_below="@id/TVTeam2Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/PrimaryText"
+
+        />
+    <ImageView
+        android:id="@+id/imageRed2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/red"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/linearReset"
+        android:layout_marginRight="16dp"
+        />
+    <TextView
+        android:id="@+id/TVNumber2RedCard"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/imageRed2"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/linearReset"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/PrimaryText"
+
+        />
+    <ImageView
+        android:id="@+id/imageYellow2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/yellow"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/imageRed2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        />
+    <TextView
+        android:id="@+id/TVNumber2YellowCard"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/imageYellow"
+        android:layout_below="@id/linearReset"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/PrimaryText"
+
+        />
+    <LinearLayout
+        android:id="@+id/linearBar3"
+        android:orientation="horizontal"
+        android:layout_below="@id/TVTeam2Name1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/AddGoalTeam2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="add Goal"
+            android:background="@color/backButton"
+
+
+            />
+        <Button
+            android:id="@+id/AddOfsyetTeam2"
+            android:text="Offset Gool"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/backButton"
+            android:layout_marginLeft="10dp"
+
+
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearBar4"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearBar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+
+        >
+
+
+        <Button
+            android:id="@+id/AddRedCardTeam2"
+            android:text="Red Card"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+
+            android:layout_below="@id/TVTeam2Number1"
+            android:background="@color/redColorCard"
+
+
+            />
+
+        <Button
+            android:id="@+id/AddYellowCardTeam2"
+            android:text="Yellow Card"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@color/yellowColorCard"
+
+            />
+    </LinearLayout>
+</RelativeLayout>

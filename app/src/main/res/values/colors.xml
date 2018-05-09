@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryDark">#FFA000</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="PrimaryText">#212121</color>
+    <color name="secondText">#757575</color>
+    <color name="background">#FFFFFF</color>
+
+    <color name="backButton">#a19e9e</color>
+
+    <color name="primary_light">#FFECB3</color>
+
+    <color name="icons">#212121</color>
+
+    <color name="divider">#BDBDBD</color>
+
+    <color name="redColorCard">#ff0000</color>
+    <color name="yellowColorCard">#ffd900</color>
+    <color name="AddColorGoal">#206c2e</color>
+
+
+
+    </resources>
